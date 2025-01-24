@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер долгов</title>
+    <style>
+/* Общий стиль */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(90deg, #2a9d8f, #264653);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+            background-color: #264653;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            transform: scale(1.1);
+            padding: 0.7em 1.2em;
+        }
+
+#background-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: 0;
+            width: 20%;
+        }
+
+main {
+    flex: 1;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 1em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+img {
+            display: block;
+            margin: 1em auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0px;
+        }
+
+th {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.animate {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #264653;
+    color: white;
+}
+
+.documentation {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.documentation pre {
+    background-color: #e9ecef;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    section {
+        padding: 1em 0.5em;
+    }
+
+    table {
+        font-size: 0.9em;
+        overflow-x: auto;
+    }
+
+    .documentation {
+        font-size: 0.9em;
+        gap: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+
+    th, td {
+        padding: 0.3em;
+    }
+
+    table {
+        font-size: 0.8em;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .documentation {
+        font-size: 0.85em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <img id="background-logo" src="logo.png" alt="DebtTracker Logo">
+    <header>
+        <h1>Трекер долгов</h1>
+        <p>Ваш путеводитель по пониманию и управлению долгами.</p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html">Практика</a>
+        <a href="tracker.html">Трекер долгов</a>
+    </nav>
+    <main>
+        <section id="tracker" class="animate">
+            <h2>Ваши долги</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название долга</th>
+                        <th>Сумма</th>
+                        <th>Процентная ставка</th>
+                        <th>Дата погашения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Кредитная карта</td>
+                        <td>50,000 ₽</td>
+                        <td>20%</td>
+                        <td>2025-03-01</td>
+                    </tr>
+                    <tr>
+                        <td>Ипотека</td>
+                        <td>2,000,000 ₽</td>
+                        <td>8%</td>
+                        <td>2035-12-31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="documentation" class="documentation animate">
+            <h2>Документация</h2>
+            <p><strong>Введение:</strong> DebtTracker — это настольное приложение для управления долгами. Оно позволяет пользователям:</p>
+            <ul>
+                <li>Добавлять и отслеживать долги.</li>
+                <li>Просматривать статистику долгов в виде диаграмм.</li>
+                <li>Настраивать отправку уведомлений о предстоящих сроках платежей.</li>
+            </ul>
+            <h3>Установка и настройка</h3>
+            <pre>
+1. Убедитесь, что на вашем компьютере установлены Python версии 3.8 или выше и следующие модули:
+   - PyQt6
+   - matplotlib
+   - psycopg2
+2. Скачайте исходный код приложения.
+3. Установите PostgreSQL, создайте базу данных с именем `debt_tracker`, и импортируйте начальную структуру таблиц из файла `schema.sql`.
+4. Запустите приложение с помощью команды.
+            </pre>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 1.9em 1em; background-color: #264653; color: white; position: relative; height: 100px;">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
+            <img style="border:0;width:84px;height:29px;"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Правильный CSS!" />
+        </a>
+        <p style="margin: 0; line-height: 1.1;">Вики: Управление долгами &copy; 2025</p>
+    </footer>
+</body>
+</html>
