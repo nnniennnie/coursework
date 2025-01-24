@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что такое долги?</title>
+    <link rel="icon" href="logotip.webp">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: linear-gradient(90deg, #2a9d8f, #264653);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+        nav {
+            background-color: #264653;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            transform: scale(1.1);
+            padding: 0.7em 1.2em;
+        }
+        main {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2em;
+            padding: 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #264653;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #264653;
+            color: white;
+        }
+        img {
+            display: block;
+            margin: 1em auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0px;
+        }
+        .animate {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            main {
+                padding: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            nav a {
+                font-size: 0.9em;
+                padding: 0.5em;
+            }
+        }
+
+        #background-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: -1;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-logo" src="logo.png" alt="DebtTracker Logo">
+    <header>
+        <h1>Что такое долги?</h1>
+        <p>Ваш путеводитель по пониманию и управлению долгами.
+                    </p>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html">Практика</a>
+        <a href="tracker.html">Трекер долгов</a>
+    </nav>
+    <main>
+        <section id="definition" class="animate">
+            <h2>Определение долгов</h2>
+            <p>Долг — это обязательство, при котором одна сторона (должник) обязуется выплатить другой стороне (кредитору) определённую сумму денег или выполнить иные условия договора. Примеры долгов включают кредиты, ипотеку и задолженности по коммунальным услугам.</p>
+            <img src="https://avatars.mds.yandex.net/i?id=8525271616c4dccfb0faccc0f5306a840bfb5224-9236689-images-thumbs&n=13" alt="Пример финансового графика">
+        </section>
+        <section id="nature" class="animate">
+            <h2>Природа долгов</h2>
+            <p>Долги могут возникать как результат договорных обязательств или в случаях, когда человек берёт заём для удовлетворения текущих потребностей. Зачастую долги сопровождаются процентами, что делает управление ими важной задачей.</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 1.9em 1em; background-color: #264653; color: white; position: relative; height: 100px;">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
+            <img style="border:0;width:84px;height:29px;"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Правильный CSS!" />
+        </a>
+        <p style="margin: 0; line-height: 1.1;">Вики: Управление долгами &copy; 2025</p>
+    </footer>
+</body>
+</html>
