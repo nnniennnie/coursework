@@ -3,128 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HexaCore - Decentralized AI/ML Computing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HexaCore - Decentralized AI/ML</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">HexaCore</div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#advantages">Why choose us</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#tokenomics">Tokenomics</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
+<body class="bg-[#17161E] text-white">
+    <header class="flex justify-between items-center px-8 py-4 bg-black text-white">
+        <div class="flex items-center space-x-3">
+            <div class="text-[#E3FE0F] font-bold text-lg">HexaCore</div>
+            <nav class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <a href="#" class="text-gray-400 hover:text-white">Menu</a>
+                    <div class="absolute left-0 top-full mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-gray-800 rounded-lg shadow-lg">
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Staking</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Advantages</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Roadmap</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Tokenomics</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Start</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">FAQ</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Buy</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-gray-400 hover:text-white">Socials</a>
+                    <div class="absolute left-0 top-full mt-2 hidden group-hover:flex group-focus-within:flex flex-col bg-gray-800 rounded-lg shadow-lg">
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Telegram</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Twitter</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Etherscan</a>
+                        <a href="#" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-700">Dextools</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-400 hover:text-white">Docs</a>
+                <a href="#" class="text-gray-400 hover:text-white">Buy</a>
             </nav>
-            <a href="#buy" class="cta-button">Buy $GPU</a>
         </div>
+        <button class="border border-[#E3FE0F] text-[#E3FE0F] px-4 py-2 rounded-lg hover:bg-[#E3FE0F] hover:text-black transition">dApp</button>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Decentralized <span>AI/ML</span> Computing</h1>
-                <p>Scale your projects with the power of decentralized GPUs, TPUs, and more.</p>
-                <div class="cta-buttons">
-                    <a href="#view-node" class="cta-primary">View Node</a>
-                    <a href="#buy" class="cta-secondary">Buy $GPU</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="graphics.png" alt="AI Node Graphic">
-            </div>
+    
+    <!-- Mobile Menu -->
+    <div class="md:hidden flex flex-col items-center bg-black text-white py-6 space-y-4">
+        <div class="text-[#E3FE0F] font-bold text-xl">HexaCore</div>
+        <a href="#" class="text-gray-400 hover:text-white">Advantages</a>
+        <a href="#" class="text-gray-400 hover:text-white">Roadmap</a>
+        <a href="#" class="text-gray-400 hover:text-white">Tokenomics</a>
+        <a href="#" class="text-gray-400 hover:text-white">Start</a>
+        <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+        <a href="#" class="text-gray-400 hover:text-white">Buy</a>
+        <div class="flex space-x-4 text-[#E3FE0F]">
+            <a href="#"><i class="icon-dextools"></i></a>
+            <a href="#"><i class="icon-etherscan"></i></a>
+            <a href="#"><i class="icon-telegram"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
         </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section id="advantages" class="advantages">
-        <div class="container">
-            <h2>Why choose us</h2>
-            <div class="advantages-grid">
-                <div class="card">
-                    <h3>Subnetix</h3>
-                    <p>Tap into the burgeoning Bittensor subnet ecosystem and fuel innovation.</p>
-                </div>
-                <div class="card">
-                    <h3>Space</h3>
-                    <p>Access processing power on demand and scale projects seamlessly.</p>
-                </div>
-                <div class="card">
-                    <h3>Craft</h3>
-                    <p>Build and deploy AI applications effortlessly with our no-code tools.</p>
-                </div>
-                <div class="card">
-                    <h3>Foundry</h3>
-                    <p>Secure data and transactions with blockchain technology.</p>
-                </div>
+    </div>
+    
+    <section class="flex flex-col md:flex-row items-center px-8 py-16">
+        <div class="md:w-1/2 space-y-6">
+            <h1 class="text-5xl font-bold leading-tight">Decentralized <span class="text-[#E3FE0F]">AI/ML</span> computing</h1>
+            <p class="text-gray-400">As well as key features of the project's structure, they were declared to violate universal norms of morality.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="bg-[#E3FE0F] text-black px-6 py-3 rounded-lg flex items-center space-x-2 hover:opacity-90">
+                    <span>View Node</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.75L21 12m0 0l-3.75 3.25M21 12H3" />
+                    </svg>
+                </a>
+                <a href="#" class="border border-gray-400 px-6 py-3 rounded-lg flex items-center space-x-2 hover:border-white">
+                    <span>Buy $GPU</span>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="roadmap">
-        <div class="container">
-            <h2>Roadmap</h2>
-            <ul class="roadmap-steps">
-                <li>
-                    <h3>01</h3>
-                    <p>Launch NodeAI Website & Dapp</p>
-                </li>
-                <li>
-                    <h3>02</h3>
-                    <p>$GPU Fair Launch & Community Growth</p>
-                </li>
-                <li>
-                    <h3>03</h3>
-                    <p>Stake to Earn Rewards</p>
-                </li>
-                <li>
-                    <h3>04</h3>
-                    <p>Referral Program & Beyond</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="tokenomics">
-        <div class="container">
-            <h2>Tokenomics</h2>
-            <div class="tokenomics-details">
+            <div class="flex space-x-12 pt-6">
                 <div>
-                    <p><strong>Token:</strong> Vuetoken</p>
-                    <p><strong>Total Supply:</strong> 100M</p>
+                    <h3 class="text-2xl font-bold">$15,750</h3>
+                    <p class="text-gray-400">Avg Monthly Revenue</p>
                 </div>
                 <div>
-                    <p><strong>Chain:</strong> TRC-20</p>
-                    <p><strong>Launch:</strong> Fair Launch</p>
+                    <h3 class="text-2xl font-bold">1</h3>
+                    <p class="text-gray-400">Active Nodes</p>
                 </div>
             </div>
         </div>
+    
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
+            <div class="relative">
+                <img src="image.png" alt="Processor" class="w-3/4 max-w-md drop-shadow-2xl relative z-10" />
+                <!-- Смещение и зелёное свечение -->
+                <div 
+                    class="absolute top-1/2 left-[39%] transform -translate-x-1/2 -translate-y-1/2 bg-[#E3FE0F] blur-[50px] rounded-full opacity-20 w-[400px] h-[400px] -z-10">
+                </div>
+            </div>
+            <div class="absolute top-4 right-4 bg-[#E3FE0F] text-black px-4 py-2 rounded-full text-xs font-bold">New Technologies</div>
+        </div>
     </section>
+    
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <ul class="faq-list">
-                <li>How much will I earn by staking $GPU?</li>
-                <li>How do I buy $GPU?</li>
-                <li>How secure is a GPU Node?</li>
-                <li>How can I access my Node?</li>
-            </ul>
+    <section class="px-8 py-16">
+        <h2 class="text-4xl font-bold mb-12">Why choose us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#E3FE0F] text-black p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Subnetix</h3>
+                <p>Tap into the burgeoning Bittensor subnet ecosystem. Participate in a vibrant derivatives market, fueling innovation and growth for Tensor Processing Unit.</p>
+            </div>
+            <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Space</h3>
+                <p>Access the processing power you need, when you need it. Scale projects seamlessly with a decentralized marketplace of GPUs, TPUs, and cutting-edge LPUs.</p>
+            </div>
+            <div class="bg-[#E3FE0F] text-black p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Craft</h3>
+                <p>Accelerate development and deployment with our intuitive, no-code AI application-building platform, empowering users of all skill levels.</p>
+            </div>
+            <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Foundry</h3>
+                <p>We use blockchain technology to keep your data, payment funds, and usage secure. It adds an extra layer of protection to ensure your information is safe and trustworthy.</p>
+            </div>
+            <div class="bg-[#E3FE0F] text-black p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Nodes</h3>
+                <p>Access the processing power you need, when you need it. Scale projects seamlessly with a decentralized marketplace of GPUs, TPUs, and cutting-edge LPUs.</p>
+            </div>
+            <div class="bg-gray-800 text-white p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">GPUs</h3>
+                <p>Tap into the burgeoning Bittensor subnet ecosystem. Participate in a vibrant derivatives market, fueling innovation and growth for Tensor Processing Unit.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="relative px-8 py-16">
+        <h2 class="text-4xl font-bold mb-12">Roadmap</h2>
+        <div class="flex flex-wrap justify-around space-y-8 md:space-y-0">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center font-bold text-2xl">01</div>
+                <ul class="mt-4 text-gray-400 space-y-2">
+                    <li><span class="text-[#E3FE0F]">✔</span> Launch NodeAI Website & Dapp</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> $GPU Fair Launch</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Stake to Earn Rewards</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Build & Grow Community</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Referral Program</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center font-bold text-2xl">02</div>
+                <ul class="mt-4 text-gray-400 space-y-2">
+                    <li><span class="text-[#E3FE0F]">✔</span> Launch NodeAI Website & Dapp</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> $GPU Fair Launch</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Stake to Earn Rewards</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Build & Grow Community</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Referral Program</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-[#E3FE0F] text-black rounded-full flex items-center justify-center font-bold text-2xl">03</div>
+                <ul class="mt-4 text-gray-400 space-y-2">
+                    <li><span class="text-[#E3FE0F]">✔</span> Launch NodeAI Website & Dapp</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> $GPU Fair Launch</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Stake to Earn Rewards</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Build & Grow Community</li>
+                    <li><span class="text-[#E3FE0F]">✔</span> Referral Program</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 border-2 border-gray-400 text-gray-400 rounded-full flex items-center justify-center font-bold text-2xl">04</div>
+                <ul class="mt-4 text-gray-400 space-y-2">
+                    <li><span class="text-gray-400">✔</span> Launch NodeAI Website & Dapp</li>
+                    <li><span class="text-gray-400">✔</span> $GPU Fair Launch</li>
+                    <li><span class="text-gray-400">✔</span> Stake to Earn Rewards</li>
+                    <li><span class="text-gray-400">✔</span> Build & Grow Community</li>
+                    <li><span class="text-gray-400">✔</span> Referral Program</li>
+                </ul>
+            </div>
+        </div>
+        <div class="absolute w-full -rotate-3 bg-[#E3FE0F] text-black text-center py-6 font-bold mt-24 left-0">
+            *** Important information for all customers! *** Important information for all customers! *** Important information for all customers! *** Important information for all customers! *** Important information for all customers! *** 
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; NFTNode, 2024</p>
+    <div class="relative">
+        <section class="px-8 py-64">
+            <h2 class="text-4xl font-bold mb-12">Tokenomics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Token</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">Vuetoken</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Symbol</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">VUET</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Total supply</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">100M</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Launch</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">Fair launch</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Chain</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">TRC-20</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">Taxes</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">5% / 5%</span>
+                </div>
+                <div class="col-span-2 flex justify-between items-center p-4 bg-gray-800 rounded-lg text-white">
+                    <span class="font-bold">0x1258d60b224c0c5cd888d37bbf31aa5fcfb7e870</span>
+                    <span class="bg-[#E3FE0F] text-black px-4 py-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <div class="absolute w-full rotate-3 bg-[#E3FE0F] text-black text-center py-6 font-bold bottom-0 left-0">
+            *** More important updates coming soon! Stay tuned! *** More important updates coming soon! Stay tuned! *** More important updates coming soon! Stay tuned! *** More important updates coming soon! Stay tuned! ***
+        </div>
+    </div>
+
+    <section class="px-8 py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-4xl font-bold">Start</h2>
+            <p class="text-gray-400">
+                It is pleasant, citizens, to observe how the basic scenarios of user behavior are only a method of political participation and are associatively distributed by industry. Suddenly, some features of domestic policy will be verified in a timely manner.
+            </p>
+            <p class="text-gray-400">
+                As well as key features of the project's structure, they were declared to violate universal norms of ethics and morality. Everyday practice shows that the high quality of positional research plays an important role in the formation of clustering efforts. Equally, the cohesion of the team of professionals reveals the urgent need for a personnel training system that meets urgent needs.
+            </p>
+            <button class="bg-[#E3FE0F] text-black px-6 py-3 rounded-lg hover:opacity-90">Get started</button>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-12 md:mt-0">
+            <div
+                class="relative w-3/4 max-w-md p-8 bg-gradient-to-r from-[#17161E] via-[#272626] 40% to-[#E3FE0F] rounded-xl"
+            >
+                <!-- Изображение внутри прямоугольника -->
+                <img
+                    src="image.png"
+                    alt="Processor"
+                    class="relative z-10 w-2/3 mx-auto rounded-lg"
+                />
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Existing Content -->
+
+    <section class="px-8 py-32">
+        <h1 class="text-3xl md:text-4xl font-bold mb-8">
+            <span class="text-[#E3FE0F]">Don't stop there</span> – create and grow with the help of decentralized computing and artificial intelligence.
+        </h1>
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-6">Submit your project</h2>
+            <form action="" method="GIT" class="space-y-6 w-full max-w-lg">
+                <div>
+                    <label for="project-name" class="block font-bold mb-2">Project Name</label>
+                    <input id="project-name" name="project-name" type="text" placeholder="Enter project name" class="w-full bg-gray-800 text-white border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-[#E3FE0F]" required>
+                </div>
+                <div>
+                    <label for="project-description" class="block font-bold mb-2">Project Description</label>
+                    <textarea id="project-description" name="project-description" placeholder="Briefly explain the project's goals and features" class="w-full bg-gray-800 text-white border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-[#E3FE0F]" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="name" class="block font-bold mb-2">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" class="w-full bg-gray-800 text-white border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-[#E3FE0F]" required>
+                </div>
+                <div>
+                    <label for="email" class="block font-bold mb-2">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Enter email" class="w-full bg-gray-800 text-white border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-[#E3FE0F]" required>
+                </div>
+                <button type="submit" class="w-full bg-[#E3FE0F] text-black py-3 rounded-lg font-bold hover:opacity-90">Send</button>
+                <p class="text-gray-400 text-sm mt-4 text-center">By submitting this form, you consent to the collection and processing of your personal data in accordance with our privacy policy.</p>
+            </form>
+        </div>
+    </section>
+    
+<section class="px-8 py-22 text-white">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left Section -->
+    <div class="flex flex-col justify-start">
+      <h2 class="text-5xl font-bold mb-4">FAQ</h2>
+      <p class="text-gray-400 ">
+        In this section we have posted answers       </p>
+
+        <p class="text-gray-400 ">
+            to frequently asked questions.      </p>
+
+        <p class="text-gray-400 mb-8">
+                If you have another question, you can email us      </p>
+                
+      <button class="flex items-center border border-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 w-fit">
+        Write to us
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 ml-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.75 8.25l-9 9m0 0l-9-9m9 9V3"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- Right Section -->
+    <div class="space-y-4">
+      <details class="p-4 rounded-lg border">
+        <summary class="font-bold cursor-pointer hover:text-[#E3FE0F]">
+          How much will I earn by staking $GPU?
+        </summary>
+        <p class="text-gray-400 mt-2">
+          Earnings depend on market conditions and your staking amount.
+        </p>
+      </details>
+      <details class="p-4 rounded-lg border">
+        <summary class="font-bold cursor-pointer hover:text-[#E3FE0F]">
+          How do I buy $GPU?
+        </summary>
+        <p class="text-gray-400 mt-2">
+          You can purchase $GPU through our official platform or supported
+          exchanges.
+        </p>
+      </details>
+      <details class="p-4 rounded-lg border">
+        <summary class="font-bold cursor-pointer hover:text-[#E3FE0F]">
+          How secure is a GPU Node?
+        </summary>
+        <p class="text-gray-400 mt-2">
+          GPU Nodes are built with advanced security measures to ensure
+          reliability.
+        </p>
+      </details>
+      <details class="p-4 rounded-lg border">
+        <summary class="font-bold cursor-pointer hover:text-[#E3FE0F]">
+          How can I access my Node?
+        </summary>
+        <p class="text-gray-400 mt-2">
+          Access your node through our dashboard with your account credentials.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="bg-gray-900 px-8 py-8 mt-32">
+        <div class="flex justify-between items-center">
+            <div class="text-gray-400">(c)NFTNode, 2024</div>
+            <nav class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">Advantages</a>
+                <a href="#" class="text-gray-400 hover:text-white">Roadmap</a>
+                <a href="#" class="text-gray-400 hover:text-white">Tokenomics</a>
+                <a href="#" class="text-gray-400 hover:text-white">Start</a>
+                <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+                <a href="#" class="text-gray-400 hover:text-white">Buy</a>
+            </nav>
+            <div class="flex space-x-4">
+                <a href="#" class="text-[#E3FE0F] hover:opacity-75">Icon1</a>
+                <a href="#" class="text-[#E3FE0F] hover:opacity-75">Icon2</a>
+                <a href="#" class="text-[#E3FE0F] hover:opacity-75">Icon3</a>
+                <a href="#" class="text-[#E3FE0F] hover:opacity-75">Icon4</a>
+            </div>
         </div>
     </footer>
+    
 </body>
 </html>
